@@ -5,7 +5,7 @@
 }: {
   imports = [
     inputs.flake-file.flakeModules.dendritic
-    inputs.den.flakeModules.dendritic
+    (inputs.den.flakeModules.dendritic or {})
   ];
 
   flake-file.inputs = {
